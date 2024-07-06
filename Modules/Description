@@ -1,0 +1,39 @@
+﻿Modules
+
+Modules provide the way to describe the relationship and dependencies to the code. 
+Also we can control which part in accessible to the other modules or which not. 
+
+Modules is group of package and resources ----> Modules Names.
+
+Keyword in Modules
+
+    • exports
+    • module
+    • open
+    • opens
+    • provides
+    • requires
+    • to
+    • transitive
+    • uses
+    • with
+
+Module declarion -----> module-info.java inside java source file and complied by compiler by javac after complies it known as module descriptor.
+
+module-info.java only contain module defintion cannot contain other type of declation.
+
+Declaration of moudle
+
+module moduleName {
+
+	// module defintion
+
+}
+
+let assume that one module is depend on other module. So the dependecies is specifred by requires statement.
+
+The required module is checked at both compile time and run time.
+
+Let assumed that we have 2 module, 1st module require 2nd module dependencies so
+2nd module, can accomplished by use the exports keyword and give the dependencies.
+ 
